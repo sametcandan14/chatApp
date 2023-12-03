@@ -1,17 +1,10 @@
-import { signInWithPopup } from "firebase/auth";
-
-import { auth, provider } from "./firebase/firebaseConfig";
+import Auth from "./pages/Auth";
 
 function App() {
-  const handleClick = () => {
-    signInWithPopup(auth, provider);
-  };
-
   return (
-    <>
-      <h1> Kayıt Ol / Giriş Yap</h1>
-      <button onClick={handleClick}>Google ile giriş yap</button>
-    </>
+    <div className="container">
+      <Auth />
+    </div>
   );
 }
 
