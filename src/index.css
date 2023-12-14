@@ -62,3 +62,89 @@ body {
 .auth button img {
   width: 40px;
 }
+
+.room-container {
+  background: white;
+  color: #1a1a1a;
+  padding: 50px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.room-container input {
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 21px;
+}
+
+.room-container button {
+  color: white;
+  transition: all 0.2s;
+}
+
+.room-container .logout {
+  background: rgb(176, 6, 40);
+}
+
+.room-container button:hover {
+  transform: scale(0.9);
+  box-shadow: 0 0 40px green;
+}
+
+/* Chat Page */
+
+.chat {
+  background: white;
+  height: 70vh;
+  width: 70vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chat header {
+  background: crimson;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat main {
+  flex-grow: 1;
+}
+.chat form {
+  display: flex;
+  justify-content: center;
+  background: crimson;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.chat form input {
+  width: 50%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+
+.chat header a,
+.chat form button {
+  background: #646cff;
+  color: white;
+  transition: all 0.3s;
+}
+
+.chat header a {
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.chat form button:hover {
+  box-shadow: 0 0 10px #646cff;
+}
