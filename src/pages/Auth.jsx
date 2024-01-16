@@ -1,11 +1,9 @@
-import { signInWithPopup } from "firebase/auth";
+import { signInWithPopup, signInWithRedirect } from "firebase/auth";
 import { auth, provider } from "../firebase/firebaseConfig";
 
 const Auth = () => {
   const handleClick = () => {
-    signInWithPopup(auth, provider)
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+    signInWithRedirect(auth, provider);
   };
   return (
     <div className="auth">

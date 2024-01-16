@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="container">
       {room ? (
-        <Chat room={room} />
+        <Chat room={room} setRoom={setRoom} />
       ) : (
         <form onSubmit={handleSubmit} className="room-container">
           <h1>Chat Room</h1>
